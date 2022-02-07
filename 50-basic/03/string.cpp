@@ -56,6 +56,8 @@ int main() {
         c = toupper(c);
     }
     cout<<s1<<endl;
+
+    //只修改一部分，下标运算符 【】返回的是该位置上字符的
     
 
 
