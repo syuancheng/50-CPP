@@ -57,8 +57,4 @@
 以上提纲未设及内存模型。对于C/C++，这个问题很重要，要放在显著位置来考虑，但对于其他语言，这个问题被透明化了，除非你要做hardcore项目，否则不必太关注。
 
 版权声明：本文为CSDN博主「myan」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-<<<<<<< HEAD
 原文链接：https://blog.csdn.net/myan/article/details/3144661
-=======
-原文链接：https://blog.csdn.net/myan/article/details/3144661
->>>>>>> 8df6d22facf8eb7d20dbfa8771af4787f842526d
