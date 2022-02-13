@@ -49,7 +49,7 @@ int main(){
     }
 
 
-    //example:
+    //Example:体现c++的简洁性
     //以10分为一个分数段统计成绩的数量， 0-9 10-19... 100
     vector<unsigned> scores(11, 0); //11个分数段， 长度为0
     unsigned grade;
