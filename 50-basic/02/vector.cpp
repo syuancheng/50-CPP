@@ -25,10 +25,14 @@ int main(){
         vec1.push_back(i);
     }    
 
+    cout<< "Length: "<< vec1.size()<<endl;
+    cout<< "Test: " << vec1[1];
+
     //TODO 范围for语句问题
     //3. For range loop
     for (auto &i : vec1)
     {
+        // vec1.erase();
         vec1.push_back(91); //err 范围for语句体内， 不应该改变所遍历序列的大小。
     }
 

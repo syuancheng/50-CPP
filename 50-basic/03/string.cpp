@@ -171,8 +171,10 @@ int main() {
     cout<<"b: "<<strb<<endl;
 
 
-
-
+    string rnk("ctr_rank:V1");
+    auto pos3 = rnk.find_first_of(":");
+    cout<<rnk.substr(0, pos3)<<endl;
+    cout<<rnk.substr(pos3+1)<<endl;
 
 
 
