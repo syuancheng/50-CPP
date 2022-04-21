@@ -36,5 +36,28 @@ void f3(A &rA, int x)
 { rA.setA(x); }
 
 int main() {
+    A a1,*pA;
+    B b1,*pB;
+    a1.setA(1);
+    b1.setA(2);
+    //0. 把派生类对象赋值给基类对象。
+    a1=b1;
+    cout<<a1.getA()<<endl;
+    cout<<b1.getA()<<endl;
+    a1.setA(10);
+    cout<<a1.getA()<<endl;
+    cout<<b1.getA()<<endl;
+
+    //2. 把派生类对象的地址赋值给基类指针。
+    pA=&b1;
+    pA->setA(20);
+    cout<<pA->getA()<<endl;
+    cout<<b1.getA()<<endl;
+
+    //3. 用派生类对象初始化基类对象的引用。
+    A &ra=b1;
+    ra.setA(30);
+    cout<<pA->getA()<<endl;
+    cout<<b1.getA()<<endl;
 
 }
