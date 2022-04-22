@@ -24,6 +24,7 @@ public:
 class B : public A {
     int b;
 public:
+    int c;
     void setB(int x){b=x;}
     int getB(){return b;}
 };
