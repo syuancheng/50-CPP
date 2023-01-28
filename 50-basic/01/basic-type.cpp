@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    int i;
+    int i=1;
 //    bool b = i == 0;
 //    int j = i - 1;
     cout<< i << endl;
