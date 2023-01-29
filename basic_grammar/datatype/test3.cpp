@@ -19,18 +19,18 @@ int &refIval2;  //应用必须被初始化。
 int main() {
     int ival = 1024;
     int &refIval = ival;
-    cout<<ival<<endl;
-    cout<<refIval<<endl;
+    cout<<ival<<endl;    //1024
+    cout<<refIval<<endl; //1024
 
     //change ival
     ival = 100;
-    cout<<ival<<endl;
-    cout<<refIval<<endl;
+    cout<<ival<<endl;   //100
+    cout<<refIval<<endl;//100
 
     //change refIval
     refIval = 24;
-    cout<<ival<<endl;
-    cout<<refIval<<endl;
+    cout<<ival<<endl;    //24
+    cout<<refIval<<endl; //24
 
     //permier test
     int i, &ri = i;

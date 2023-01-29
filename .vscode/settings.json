@@ -5,7 +5,9 @@
         "vector": "cpp",
         "iosfwd": "cpp",
         "unordered_map": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "iostream": "cpp",
+        "typeinfo": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
