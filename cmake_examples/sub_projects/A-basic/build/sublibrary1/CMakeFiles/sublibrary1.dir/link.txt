@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libsublibrary1.a CMakeFiles/sublibrary1.dir/src/sublib1.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libsublibrary1.a
