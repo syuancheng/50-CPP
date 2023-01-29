@@ -24,12 +24,23 @@ Creating a variable which includes the source files allows you to be clearer abo
 When you have different include folders, you can make your compiler aware of them using the target_include_directories() function. When compiling this target this will add these directories to the compiler with the -I flag e.g. -I/directory/path.
 The PRIVATE identifier specifies the scope of the include. (`B-hello-header`)
 `PROJECT_SOURCE_DIR`: The source directory of the current cmake project.
+`PRIVATE` - the directory is added to this target’s include directories
+`INTERFACE` - the directory is added to the include directories for any targets that link this library.
+`PUBLIC` - As above, it is included in this library and also any targets that link this library.(`C-static-library`)
 
 
+`add_library(hello_library STATIC 
+    src/Hello.cpp
+)`
+The add_library() function is used to create a library from some source files. 
+In this case, Generate the static library from the library sources.(`C-static-library`)
 
-
-
-
+`target_link_libraries( hello_binary
+    PRIVATE 
+        hello_library
+)`
+When creating an executable that will use your library you must tell the compiler about the library. This can be done using the target_link_libraries() function.
+This tells CMake to link the hello_library against the hello_binary executable during link time.(`C-static-library`)
 
 
 ### Building
