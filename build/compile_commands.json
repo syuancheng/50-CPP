@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/siyuancheng/Documents/cpp_workspace/50-CPP/build",
-  "command": "/usr/bin/clang++  -I/Users/siyuancheng/Documents/cpp_workspace/50-CPP/50-basic/mixer -I/Users/siyuancheng/Documents/cpp_workspace/50-CPP/50-basic/mixer/value_pass -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14 -o CMakeFiles/50_CPP.dir/50-basic/mixer/value_pass/workflow.cpp.o -c /Users/siyuancheng/Documents/cpp_workspace/50-CPP/50-basic/mixer/value_pass/workflow.cpp",
-  "file": "/Users/siyuancheng/Documents/cpp_workspace/50-CPP/50-basic/mixer/value_pass/workflow.cpp"
-}
-]
