@@ -1,4 +1,0 @@
-/Users/siyuancheng/Documents/cpp_workspace/50-CPP/cmake_examples/C-static-library/build/CMakeFiles/hello_library.dir
-/Users/siyuancheng/Documents/cpp_workspace/50-CPP/cmake_examples/C-static-library/build/CMakeFiles/hello_binary.dir
-/Users/siyuancheng/Documents/cpp_workspace/50-CPP/cmake_examples/C-static-library/build/CMakeFiles/edit_cache.dir
-/Users/siyuancheng/Documents/cpp_workspace/50-CPP/cmake_examples/C-static-library/build/CMakeFiles/rebuild_cache.dir
