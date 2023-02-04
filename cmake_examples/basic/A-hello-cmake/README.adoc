@@ -1,0 +1,21 @@
+### CMake introduction
+
+`cmake_minimum_required(VERSION 3.5)`
+specify the minimum version of CMake, when creating a project using CMake.
+
+`project (hello_cmake)`
+A CMake build can include a project name to make referencing certain variables easier when using multiple projects.
+
+`add_executable(hello_cmake main.cpp)`
+An executable should be build from the specified source files, The first argument to the add_executable() function is the name of the executable to be built, 
+and the second argument is the list of source files to compile.
+
+
+Building
+```
+mkdir build
+cd build
+cmake ..
+make
+./${project_name}
+```
