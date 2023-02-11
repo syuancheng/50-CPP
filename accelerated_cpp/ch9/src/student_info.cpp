@@ -5,7 +5,9 @@ Student_info::Student_info(std::istream& is)
     read(is);
 }
 
-
+double Student_info::grade() const {
+    return ::grade(midterm, final, homework);
+}
 
 double grade(double midterm, double final, const std::vector<double>& hw) {
     if (hw.size() == 0)
@@ -15,16 +17,12 @@ double grade(double midterm, double final, const std::vector<double>& hw) {
     return grade(midterm, final, median(hw));
 }
 
-double Student_info::grade() const {
-    return grade(midterm, final, homework);
-}
-
-double Student_info::grade(double midterm, double final, double hw) {
+double grade(double midterm, double final, double hw) {
     
     return midterm * 0.2 + hw * 0.2 + final * 0.6;
 } 
 
-double Student_info::median(std::vector<double> vec) {
+double median(std::vector<double> vec) {
     typedef std::vector<double>::size_type vec_sz;
 
     vec_sz size = vec.size();
