@@ -9,12 +9,15 @@ struct Student
     float* height;
 };
 
-void test1(const Student& student) {
+void test1(Student& student) {
     cout << "student pointer:" << &student << ", target: " << student.name << endl;
-    Student newStu;
-    cout << "newStu1 pointer:" << &newStu << ", target: " << newStu.name << endl;
-    newStu = student;
-    cout << "newStu2 pointer:" << &newStu << ", target: " << newStu.name << endl;
+
+    Student& newStu = student;
+    cout << "newStu  pointer:" << &newStu << ", target: " << newStu.name << endl;
+
+    Student copyStu = student;    
+    cout << "copyStu pointer:" << &copyStu << ", target: " << copyStu.name << endl;
+
 
 }
 
