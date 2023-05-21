@@ -15,5 +15,9 @@ int main()
     //     cout << i << endl;
     // }
 
+    int i = 3;
+    float ret = 1.0/i;
+    cout << ret << endl;
+
     return 0;
 }
