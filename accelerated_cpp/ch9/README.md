@@ -1,4 +1,16 @@
-ch9
+## ch9
+知识点：
+struct vs class
+唯一的区别： 当保护修饰符(private, public)不存在时：
+class 缺省为私有
+struct 缺省为公有
+
+保护标识符：
+可以随时出现， 并且可以出现多次
+
+成员函数
+
+构造函数初始化列表
 
 缺省构造：
 string和vector会被初始化为空的字符串和向量。
