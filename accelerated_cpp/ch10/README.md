@@ -7,7 +7,7 @@
 结束时，该变量占用的内存自动释放。
 ```c++
 int* invalid_pointer() {
-    int x;
+    int x;       //紧急灾难！
     return &x;
 }
 ```
@@ -16,7 +16,7 @@ int* invalid_pointer() {
 静态分配，把x声明为静态变量就可以解决上述问题了。
 ```c++
 int* invalid_pointer() {
-    static int x;
+    static int x; //合法写法
     return &x;
 }
 ```
