@@ -31,8 +31,14 @@
 *.out
 *.app
 
+# Operating-system and editor metadata
+.DS_Store
+
 
 .vscode
 .idea
 
 build/
+cmake-build-*/
+CMakeUserPresets.json
+compile_commands.json
