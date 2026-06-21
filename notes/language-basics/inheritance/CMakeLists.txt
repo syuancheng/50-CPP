@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.16)
+project(inheritance_examples LANGUAGES CXX)
+
+function(add_inheritance_example target source)
+    add_executable(${target} "${source}")
+    target_compile_features(${target} PRIVATE cxx_std_17)
+endfunction()
+
+add_inheritance_example(diamond_ambiguity "例1.cpp")
+add_inheritance_example(virtual_inheritance "例2.cpp")
+add_inheritance_example(protected_member "保护成员.cpp")
+add_inheritance_example(protected_inheritance "保护继承.cpp")
+add_inheritance_example(base_and_derived "基类和派生类.cpp")
+add_inheritance_example(construction_order "构造函数调用次序.cpp")
+add_inheritance_example(derived_without_constructor "没有构造函数的派生类.cpp")
+add_inheritance_example(derived_constructor "派生类构造函数.cpp")
+add_inheritance_example(base_constructor_arguments "派生类给基类传递参数.cpp")
